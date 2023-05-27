@@ -1,0 +1,50 @@
+{
+    "navbar.home" : "Home",
+    "navbar.skills" : "Skills",
+    "navbar.projects" : "Projects",
+    "navbar.contact" : "Contact",
+
+    "introPage.greeting": "¡Hi! I am",
+    "introPage.info": "Self-taught student of Front-end programming. Currently looking for my first work experience in the world of web development.",
+    "introPage.IAimg": "AI generated image",
+
+    "skills.current": "CURRENT SKILLS",
+    "skills.future": "FUTURE SKILLS",
+
+    "projects.title" : "PROJECTS",
+    "projects.portfoliov2" : "Portfolio V2",
+    "projects.portfoliov2Desc" : "Portfolio did to practise React.",
+    "projects.puzzle" : "Game: Puzzle",
+    "projects.puzzleDesc" : "Puzzle made with html, css and JavaScript!",
+    "projects.clone" : "CoinBase Clone",
+    "projects.cloneDesc" : "Coinbase clone, did after html-css course.",
+    "projects.watch" : "Watch practice",
+    "projects.watchDesc" : "Watch made as a JavaScript practice",
+    "projects.pokedex" : "Pokedex",
+    "projects.pokedexDesc" : "Pokedex did to practise hooks and fetch",
+    "projects.portfoliov1" : "Portfolio V1",
+    "projects.portfoliov1Desc" : "Portfolio i did to practise html, css and javascript",
+    "projects.calculator" : "Calculator",
+    "projects.calculatorDesc" : "Calculator made with Vite-React",
+    "projects.githubProfileSearch" : "GitHub Profile finder",
+    "projects.githubProfileSearchDesc" : "Finder made with Vite-React",
+    "projects.musicplayer" : "Music Player",
+    "projects.musicplayerDesc" : "Player made to practise hooks and tailwind",
+
+    "contact.title" : "CONTACT",
+    "contact.name" : "Name",
+    "contact.email" : "Email",
+    "contact.message" : "Message",
+    "contact.send" : "Send",
+
+    "contact.leftinfoh2" : "Let's Chat!",
+    "contact.leftinfop1" : "Whether you have a question, want to start a project or simply want to connect.",
+    "contact.leftinfop2" : "Feel free to send me a message in the contact form",
+
+    "error.name" : "Name field cannot be empty",
+    "error.name2" : "Name field accepts only letters and spaces",
+    "error.email" : "Email field cannot be empty",
+    "error.email2" : "Email field contains an invalid format",
+    "error.message" : "Message field cannot be empty",
+    "error.message2" : "Message field accepts only 255 characters"
+}
