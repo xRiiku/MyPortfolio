@@ -10,6 +10,10 @@ export default function App() {
     
         <Navbar />
         <Home />
+        <Home />
+        <Home />
+        <Home />
+        <Home />
   
     </div>
   );

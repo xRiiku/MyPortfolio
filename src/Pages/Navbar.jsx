@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { navbarDataEn } from "../assets/utilities/navbarDataEn";
 import { navbarDataEs } from "../assets/utilities/navbarDataEs";
 import { useTranslation } from "react-i18next";
@@ -9,6 +9,20 @@ export default function Navbar() {
     const [toggle, setToggle] = useState(false);
     const { i18n } = useTranslation();
     const [language, setLanguage] = useState("es");
+    const [isNavbarAbove, setIsNavbarAbove] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        const navbarHeight = document.getElementById("navbar").offsetHeight;
+        const scrollY = window.scrollY;
+        setIsNavbarAbove(scrollY > navbarHeight);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+        window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     const onChangeLanguage = () => {
         if (language === "en") {
@@ -24,13 +38,17 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed pt-5 text-xl w-full items-center flex p-80 z-20">
-        <div className="flex justify-between items-center max-w-[1280px] w-screen  mx-auto">
+        <nav
+        id="navbar"
+        className={`fixed pt-5 text-xl w-screen items-center flex z-20 ${
+            isNavbarAbove ? "backdrop-blur-lg" : ""
+        } bg-opacity-70 light:bg-white dark:bg-gray-800`}
+        >
+        <div className="flex justify-between items-center max-w-[1280px] w-screen mx-auto flex-wrap minlg:flex-nowrap">
             <a href="/">
             <span className="font-medium bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600 text-transparent bg-clip-text">
                 RikuDev
             </span>
-
             </a>
 
             <button
@@ -43,9 +61,8 @@ export default function Navbar() {
             <ul
             className={`${
                 toggle ? "flex" : "hidden"
-            } flex-col justify-center gap-6 items-center w-full first:mt-2 minlg:flex-row minlg:w-auto minlg:space-x-10 minlg:flex`}
+            } flex-col justify-center gap-6 items-center w-screen first:mt-2 minlg:flex-row minlg:w-auto minlg:space-x-10 minlg:flex`}
             >
-            
             {language === "en"
                 ? navbarDataEn.map((link, index) => {
                     return (
