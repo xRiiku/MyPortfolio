@@ -84,7 +84,7 @@ export default function Navbar() {
                 <i className="fas fa-bars text-current w-9 h-9 flex justify-center items-center"></i>
                 </button>
             ) : (
-                <div className="flex">
+                <div className="flex justify-center items-center">
                 <span onClick={onChangeLanguage} className="cursor-pointer">
                     {language === "en" ? <SpainWave /> : <EeUuWave />}
                 </span>
