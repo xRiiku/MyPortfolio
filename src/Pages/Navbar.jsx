@@ -70,7 +70,6 @@ export default function Navbar() {
                         <a
                         className="hover:bg-gradient-to-r hover:from-sky-500 hover:via-purple-500 hover:to-pink-600 hover:text-transparent hover:bg-clip-text"
                         href={link.href}
-                        onClick={showNav}
                         >
                         {link.title}
                         </a>
@@ -83,7 +82,6 @@ export default function Navbar() {
                         <a
                         className="hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text"
                         href={link.href}
-                        onClick={showNav}
                         >
                         {link.title}
                         </a>
