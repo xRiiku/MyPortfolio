@@ -64,7 +64,7 @@ export default function Navbar() {
             } flex-col justify-center gap-6 items-center w-screen first:mt-2 minlg:flex-row minlg:w-auto minlg:space-x-10 minlg:flex`}
             >
             {language === "en"
-                ? navbarDataEn.map((link, index) => {
+                ? navbarDataEs.map((link, index) => {
                     return (
                     <li key={index} className={link.cname}>
                         <a
@@ -76,7 +76,8 @@ export default function Navbar() {
                     </li>
                     );
                 })
-                : navbarDataEs.map((link, index) => {
+                : language === "es" ? 
+                navbarDataEn.map((link, index) => {
                     return (
                     <li key={index} className={link.cname}>
                         <a
@@ -87,8 +88,9 @@ export default function Navbar() {
                         </a>
                     </li>
                     );
-                })}
+                }):null}
             </ul>
+            
 
             <div className={`${toggle ? "hidden" : "flex"}`}>
             {toggle ? (
@@ -101,7 +103,7 @@ export default function Navbar() {
             ) : (
                 <div className="flex justify-center items-center">
                 <span onClick={onChangeLanguage} className="cursor-pointer">
-                    {language === "en" ? <SpainWave /> : <EeUuWave />}
+                    {language === "en" ? <EeUuWave /> : <SpainWave />}
                 </span>
                 <div>
                     <DarkMode />
