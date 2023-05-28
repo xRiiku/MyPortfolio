@@ -5,7 +5,7 @@ export default function Home(){
 
     const {t} = useTranslation()
     return (
-        <main id="home" className="text-xl w-screen items-center flex pt-52 z-20">
+        <main id="home" className="text-xl w-screen items-center flex pt-52 z-20 px-10">
         <div className="flex mt-10 justify-between items-center max-w-[1280px] w-screen mx-auto maxsm:flex-col maxsm:gap-10">
             <div className="text-4xl flex flex-col font-medium gap-2">
                 <span>{t('home.hi')}</span>

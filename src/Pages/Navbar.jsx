@@ -40,7 +40,7 @@ export default function Navbar() {
     return (
         <nav
         id="navbar"
-        className={`fixed pt-5 text-xl w-screen items-center flex z-20 ${
+        className={`fixed px-10 pt-5 text-xl w-screen items-center flex z-20 ${
             isNavbarAbove ? "backdrop-blur-lg" : ""
         } bg-opacity-70 light:bg-white dark:bg-gray-800`}
         >
