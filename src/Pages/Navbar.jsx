@@ -51,11 +51,11 @@ export default function Navbar() {
 
     return (
         <nav
-  id="navbar"
-  className={`fixed px-10 pt-5 text-xl w-screen items-center flex z-20 transition-colors ${
-    isScrolled ? (theme === "light" ? "bg-white" : "bg-black") : "bg-transparent"
-  }`}
->
+        id="navbar"
+        className={`fixed px-10 pt-5 text-xl w-screen items-center flex z-20 transition-colors ${
+            isScrolled ? (theme === "light" ? "bg-white" : "bg-black") : "bg-transparent"
+        }`}
+        >
 
 
         <div className="flex justify-between items-center max-w-[1280px] w-screen mx-auto flex-wrap minlg:flex-nowrap">
@@ -119,7 +119,7 @@ export default function Navbar() {
                 <span onClick={onChangeLanguage} className="cursor-pointer">
                     {language === "en" ? <EeUuWave /> : <SpainWave />}
                 </span>
-                
+
                 <div>
                 <span
                     className={`w-12 h-12 rounded-full cursor-pointer ${theme === 'light' ? 'bg-black text-white' : 'bg-white text-black'}`}
