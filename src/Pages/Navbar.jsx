@@ -2,28 +2,39 @@ import { useState, useEffect } from "react";
 import { navbarDataEn } from "../assets/utilities/navbarDataEn";
 import { navbarDataEs } from "../assets/utilities/navbarDataEs";
 import { useTranslation } from "react-i18next";
-import DarkMode from "../assets/utilities/DarkMode";
+import { Moon, Sun } from '../assets/utilities/DarkModeIcons';
 import { EeUuWave, SpainWave } from "../assets/utilities/Language";
 
 export default function Navbar() {
     const [toggle, setToggle] = useState(false);
     const { i18n } = useTranslation();
     const [language, setLanguage] = useState("es");
-    const [isNavbarAbove, setIsNavbarAbove] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [theme, setTheme] = useState('light');
 
+    /* DARK MODE */
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.classList.remove('dark', 'light');
+    body.classList.add(theme);
+  }, [theme]);
+
+  /* SCROLL NAV BACKGROUND */
     useEffect(() => {
         const handleScroll = () => {
-        const navbarHeight = document.getElementById("navbar").offsetHeight;
-        const scrollY = window.scrollY;
-        setIsNavbarAbove(scrollY > navbarHeight);
+          const scrollTop = window.pageYOffset;
+          setIsScrolled(scrollTop > 0);
         };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-        window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+    
+/* CHANGE LANGUAGE */
     const onChangeLanguage = () => {
         if (language === "en") {
         setLanguage("es");
@@ -33,17 +44,20 @@ export default function Navbar() {
         i18n.changeLanguage(language);
     };
 
+    /* SHOW NAV RESPONSIVE */
     const showNav = () => {
         setToggle(!toggle);
     };
 
     return (
         <nav
-        id="navbar"
-        className={`fixed px-10 pt-5 text-xl w-screen items-center flex z-20 ${
-            isNavbarAbove ? "backdrop-blur-lg" : ""
-        } bg-opacity-70 light:bg-white dark:bg-gray-800`}
-        >
+  id="navbar"
+  className={`fixed px-10 pt-5 text-xl w-screen items-center flex z-20 transition-colors ${
+    isScrolled ? (theme === "light" ? "bg-white" : "bg-black") : "bg-transparent"
+  }`}
+>
+
+
         <div className="flex justify-between items-center max-w-[1280px] w-screen mx-auto flex-wrap minlg:flex-nowrap">
             <a href="/">
             <span className="font-medium bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600 text-transparent bg-clip-text">
@@ -105,8 +119,14 @@ export default function Navbar() {
                 <span onClick={onChangeLanguage} className="cursor-pointer">
                     {language === "en" ? <EeUuWave /> : <SpainWave />}
                 </span>
+                
                 <div>
-                    <DarkMode />
+                <span
+                    className={`w-12 h-12 rounded-full cursor-pointer ${theme === 'light' ? 'bg-black text-white' : 'bg-white text-black'}`}
+                    onClick={toggleTheme}
+                    >
+                    {theme === 'light' ? <Moon /> : <Sun />}
+                </span>
                 </div>
                 </div>
             )}

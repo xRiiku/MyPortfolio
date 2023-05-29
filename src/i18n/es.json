@@ -4,5 +4,8 @@
     "home.junior": "Desarrollador FrontEnd Junior",
 
     "skills.title": "Mis Habilidades",
-    "skills.description": "Tecnologías con las que he estado trabajado recientemente"
+    "skills.description": "Tecnologías con las que he estado trabajado recientemente",
+
+    "about.title": "Sobre Mi",
+    "about.description": " Soy estudiante autodidacta de programación web y desarrollo de software. Me especializo en tecnologías de frontend. Actualmente, estoy enfocado en mi proceso de aprendizaje constante y buscando mi primera oportunidad profesional que me ponga a prueba y me permita seguir creciendo dentro del mundo del desarrollo. A futuro me gustaría tener la oportunidad de colaborar en proyectos desafiantes y ampliar mis horizontes. Estoy comprometido con el aprendizaje continuo con el objetivo de llegar a ser FullStack Developer. Creo que el trabajo en equipo es fundamental para alcanzar resultados sobresalientes y obtener diferentes puntos de vista en los que todas las partes obtengan un aprendizaje de cada uno de los proyectos realizados."
 }

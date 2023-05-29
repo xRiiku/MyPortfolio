@@ -7,25 +7,25 @@ export const navbarDataEs = [
     },
     {
         title: 'Sobre mi',
-        href: '#test1',
+        href: '#about',
         cname:
         'border-t font-medium w-screen flex justify-center p-2.5 minlg:border-none minlg:p-0 minlg:w-auto',
     },
     {
         title: 'Habilidades',
-        href: '#test2',
+        href: '#skills',
         cname:
         'border-t font-medium w-screen flex justify-center p-2.5 minlg:border-none minlg:p-0 minlg:w-auto',
     },
     {
         title: 'Proyectos',
-        href: '#test3',
+        href: '#projects',
         cname:
         'border-t border-b font-medium w-screen flex justify-center p-2.5 minlg:border-none minlg:p-0 minlg:w-auto',
     },
     {
         title: 'Contacto',
-        href: '.contact',
+        href: '#contact',
         cname:
         'border-t border-b font-medium w-screen flex justify-center p-2.5 minlg:border-none minlg:p-0 minlg:w-auto',
     },

@@ -1,4 +1,5 @@
 
+import About from './Pages/About.jsx';
 import Home from './Pages/Home.jsx';
 import Navbar from './Pages/Navbar.jsx';
 import Skills from './Pages/Skills.jsx';
@@ -10,6 +11,7 @@ export default function App() {
     
         <Navbar />
         <Home />
+        <About />
         <Skills />
     </div>
   );
