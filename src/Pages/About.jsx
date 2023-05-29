@@ -12,6 +12,7 @@ export default function About(){
         <div className="flex flex-col justify-between mt-10 max-w-[1280px] w-screen mx-auto items-center maxsm:flex-col maxsm:gap-10">
             <div className="flex flex-col font-medium gap-2 justify-center items-center">
                 <span className="text-2xl text-center">{t('about.title')}</span>
+                <span className="text-gray-500 text-center">{t('about.subtitle')}</span>
             </div>
 
             <div className='flex flex-wrap justify-between items-center mx-auto w-full mt-10 gap-10'>
