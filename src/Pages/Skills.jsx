@@ -8,17 +8,20 @@ import vscode from '../assets/img/vscode.svg'
 import vite from '../assets/img/vite.svg'
 import git from '../assets/img/git.svg'
 import github from '../assets/img/github.svg'
+import { useTranslation } from "react-i18next";
 
 
 export default function Skills(){
+
+    const {t} = useTranslation()
 
     
     return (
         <section id="skills" className="text-xl w-screen items-center flex pt-52 z-20 px-10">
         <div className="flex flex-col justify-between mt-10 max-w-[1280px] w-screen mx-auto items-center maxsm:flex-col maxsm:gap-10">
             <div className="flex flex-col font-medium gap-2 justify-center items-center">
-                <span className="text-2xl text-center">My Skills</span>
-                <span className="text-gray-500 text-center"> Technologies I´ve been working with recently</span>
+                <span className="text-2xl text-center">{t('skills.title')}</span>
+                <span className="text-gray-500 text-center"> {t('skills.description')}</span>
             </div>
 
             <div className='flex flex-wrap justify-between items-center mx-auto w-full mt-10 gap-10'>
