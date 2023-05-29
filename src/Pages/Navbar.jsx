@@ -52,7 +52,7 @@ export default function Navbar() {
     return (
         <nav
         id="navbar"
-        className={`fixed px-10 pt-5 text-xl w-screen items-center flex z-20 transition-colors ${
+        className={`fixed px-10 pt-5 text-xl w-screen items-center flex z-20 ${
             isScrolled ? (theme === "light" ? "bg-white" : "bg-black") : "bg-transparent"
         }`}
         >
