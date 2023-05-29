@@ -1,5 +1,8 @@
 
 import { useTranslation } from "react-i18next";
+import github from '../assets/img/github.svg'
+import linkedin from '../assets/img/linkedin.svg'
+import twitter from '../assets/img/twitter.svg'
 
 export default function About(){
 
@@ -13,7 +16,12 @@ export default function About(){
 
             <div className='flex flex-wrap justify-between items-center mx-auto w-full mt-10 gap-10'>
                 <span className="maxls:text-center">{t('about.description')}</span>
-                
+            </div>
+
+            <div className="flex pt-10 flex-wrap justify-center items-center gap-24">
+                <a href="https://github.com/xRiiku" target='_blank' rel='noopener noreferrer'><img className="w-14 h-14 hover:opacity-70" src={github} alt="github"></img></a>
+                <a href="https://www.linkedin.com/in/danielramoncampos" target='_blank' rel='noopener noreferrer'><img className="w-14 h-14 hover:opacity-70" src={linkedin} alt="linkedin"></img></a>
+                <a href="https://twitter.com/xRikuDev" target='_blank' rel='noopener noreferrer'><img className="w-14 h-14 hover:opacity-70" src={twitter} alt="twitter"></img></a>
             </div>
 
             
