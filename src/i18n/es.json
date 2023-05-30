@@ -25,5 +25,12 @@
     "cardproject.portfolio2": "Portafolio V2",
     "cardproject.portfolio3": "Portafolio V3",
     "cardproject.puzzle": "Juego Puzzle",
-    "cardproject.watch": "Reloj Digital"
+    "cardproject.watch": "Reloj Digital",
+
+    "contact.mainTitle": "Contacto",
+    "contact.description": "Contáctame!",
+    "contact.getInTouch": "Ya sea que tengas una pregunta, quieras comenzar un proyecto o simplemente quieras conectarte, no dudes en enviarme un mensaje a través del formulario de contacto o en las redes sociales.",
+    "contact.nameLabel": "Nombre",
+    "contact.mailLabel": "Correo",
+    "contact.messageLabel": "Mensaje"
 }

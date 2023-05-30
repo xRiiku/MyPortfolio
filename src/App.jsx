@@ -1,6 +1,7 @@
 
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact.jsx';
+import Footer from './Pages/Footer.jsx';
 import Home from './Pages/Home.jsx';
 import Navbar from './Pages/Navbar.jsx';
 import Projects from './Pages/Projects.jsx';
@@ -17,6 +18,7 @@ export default function App() {
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
     </div>
   );
 }

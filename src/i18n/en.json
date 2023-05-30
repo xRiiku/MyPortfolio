@@ -27,5 +27,12 @@
     "cardproject.portfolio2": "Portfolio V2",
     "cardproject.portfolio3": "Portfolio V3",
     "cardproject.puzzle": "Puzzle Game",
-    "cardproject.watch": "Digital Watch"
+    "cardproject.watch": "Digital Watch",
+
+    "contact.mainTitle": "Contact",
+    "contact.description": "Get In Touch!",
+    "contact.getInTouch": "Whether you have a question, want to start a project or simply want to connect. Feel free to send me a message in the contact form or social media",
+    "contact.nameLabel": "Name",
+    "contact.mailLabel": "Mail",
+    "contact.messageLabel": "Message"
 }
