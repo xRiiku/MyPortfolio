@@ -75,7 +75,9 @@ export default function Navbar() {
             <ul
             className={`${
                 toggle ? "flex" : "hidden"
-            } flex-col justify-center gap-6 items-center w-full first:mt-2 minlg:flex-row minlg:w-auto minlg:space-x-10 minlg:flex`}
+            } ${
+            isScrolled === false ? (theme === "light" ? "bg-white" : "bg-black") : ""
+        } flex-col justify-center gap-6 items-center w-full first:mt-2 minlg:flex-row minlg:w-auto minlg:space-x-10 minlg:flex`}
             >
             {language === "en"
                 ? navbarDataEs.map((link, index) => {
