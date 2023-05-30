@@ -10,5 +10,22 @@
 
     "about.title": "About Me",
     "about.subtitle": "My personal description",
-    "about.description": "I'm a self-taught student in web programming and software development. I specialize in frontend technologies. Currently, I'm focused on my ongoing learning process and seeking my first professional opportunity that challenges me and allows me to continue growing in the world of development. In the future, I would like to have the opportunity to collaborate on challenging projects and broaden my horizons. I am committed to continuous learning with the goal of becoming a FullStack Developer. I believe that teamwork is essential to achieve outstanding results and gain different perspectives where all parties can learn from each project"
+    "about.description": "I'm a self-taught student in web programming and software development. I specialize in frontend technologies. Currently, I'm focused on my ongoing learning process and seeking my first professional opportunity that challenges me and allows me to continue growing in the world of development. In the future, I would like to have the opportunity to collaborate on challenging projects and broaden my horizons. I am committed to continuous learning with the goal of becoming a FullStack Developer. I believe that teamwork is essential to achieve outstanding results and gain different perspectives where all parties can learn from each project",
+
+    "projects.mainTitle": "My Projects",
+    "projects.description": "Projects I’ve built so far",
+    "projects.technologies": "Technologies",
+    "cardproject.preview": "Live preview",
+    "cardproject.code": "View code",
+    "cardproject.gym": "Gym Web",
+    "cardproject.pokedex": "Pokédex",
+    "cardproject.coinbase": "Coinbase Clone",
+    "cardproject.githubFinder": "Profile Finder",
+    "cardproject.calculator": "Calculator",
+    "cardproject.music": "Music Player",
+    "cardproject.portfolio1": "Portfolio V1",
+    "cardproject.portfolio2": "Portfolio V2",
+    "cardproject.portfolio3": "Portfolio V3",
+    "cardproject.puzzle": "Puzzle Game",
+    "cardproject.watch": "Digital Watch"
 }

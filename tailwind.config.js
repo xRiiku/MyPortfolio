@@ -38,7 +38,10 @@ export default {
       // => @media (max-width: 465px) { ... }'max': }
 
       'maxxs': {'max': '368px'},
-      // => @media (max-width: 300px) { ... }
+      // => @media (max-width: 368px) { ... }
+
+      'maxxxs': {'max': '279px'},
+      // => @media (max-width: 279px) { ... }
     }
   },
   plugins: [],
