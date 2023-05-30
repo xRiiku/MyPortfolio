@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.light {
+.light, .light label {
     background-color: #ffffff;
     color: #000000;
   }
   
-  .dark {
+  .dark, .dark label, .dark input, .dark textarea {
     background-color: #000000;
     color: #ffffff;
   }
