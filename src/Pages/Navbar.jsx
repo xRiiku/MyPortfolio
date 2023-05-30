@@ -13,26 +13,26 @@ export default function Navbar() {
     const [theme, setTheme] = useState('light');
 
     /* DARK MODE */
-  const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-  };
+    const toggleTheme = () => {
+        setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+    };
 
-  useEffect(() => {
-    const body = document.querySelector('body');
-    body.classList.remove('dark', 'light');
-    body.classList.add(theme);
-  }, [theme]);
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.classList.remove('dark', 'light');
+        body.classList.add(theme);
+    }, [theme]);
 
   /* SCROLL NAV BACKGROUND */
     useEffect(() => {
         const handleScroll = () => {
-          const scrollTop = window.pageYOffset;
-          setIsScrolled(scrollTop > 0);
+            const scrollTop = window.pageYOffset;
+            setIsScrolled(scrollTop > 0);
         };
     
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-      }, []);
+    }, []);
     
 /* CHANGE LANGUAGE */
     const onChangeLanguage = () => {
@@ -53,7 +53,7 @@ export default function Navbar() {
         <nav
         id="navbar"
         className={`fixed px-10 pt-5 text-xl w-screen items-center flex z-20 ${
-            isScrolled ? (theme === "light" ? "bg-white" : "bg-black") : "bg-transparent"
+            isScrolled ? (theme === "light" ? "bg-white" : "bg-black") : ""
         }`}
         >
 
@@ -75,7 +75,7 @@ export default function Navbar() {
             <ul
             className={`${
                 toggle ? "flex" : "hidden"
-            } flex-col justify-center gap-6 items-center w-screen first:mt-2 minlg:flex-row minlg:w-auto minlg:space-x-10 minlg:flex`}
+            } flex-col justify-center gap-6 items-center w-full first:mt-2 minlg:flex-row minlg:w-auto minlg:space-x-10 minlg:flex`}
             >
             {language === "en"
                 ? navbarDataEs.map((link, index) => {
