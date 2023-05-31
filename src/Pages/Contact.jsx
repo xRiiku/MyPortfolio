@@ -28,14 +28,14 @@ export default function Projects(){
             </div>
 
             <div className='relative border border-zinc-600 rounded-xl w-[400px] maxls:w-[300px] maxxs:w-[200px]'>
-            <form action="mailto:riku@rikudev.com" method="post" className="flex flex-col gap-5 p-10">
-                <label className="absolute top-9 left-16 px-1 -translate-y-3 text-zinc-600">{t('contact.nameLabel')}</label>
+            <form action="mailto:drc89.sxm@gmail.com" method="post" className="flex flex-col gap-5 p-10">
+                <label htmlFor='name' className="absolute top-9 left-16 px-1 -translate-y-3 text-zinc-600">{t('contact.nameLabel')}</label>
                 <input className=" w-full h-14 border border-zinc-600 rounded-md text-center" type="text" name="name" required/>
                 
-                <label className="absolute top-[133px] left-16 px-1 -translate-y-3 text-zinc-600">{t('contact.mailLabel')}</label>
+                <label htmlFor='email' className="absolute top-[133px] left-16 px-1 -translate-y-3 text-zinc-600">{t('contact.mailLabel')}</label>
                 <input className="w-full h-14 border border-zinc-600 rounded-md text-center mt-5" type="email" name="email" required/>
 
-                <label className="absolute top-[229px] left-16 px-1 -translate-y-3 text-zinc-600">{t('contact.messageLabel')}</label>
+                <label htmlFor='message' className="absolute top-[229px] left-16 px-1 -translate-y-3 text-zinc-600">{t('contact.messageLabel')}</label>
                 <textarea className="w-full h-32 border border-zinc-600 rounded-md mt-5 text-center" name="message" required/>
 
                 <button className='w-full h-14 border border-zinc-600 bg-[#3E75C3] text-white rounded-md text-center mt-5 uppercase' type="submit">Send</button>

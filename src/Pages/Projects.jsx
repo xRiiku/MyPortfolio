@@ -45,7 +45,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.gym')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={react} alt='react'></img>
                             <img className='w-10 h-10' src={tailwind} alt='tailwind'></img>
@@ -68,7 +68,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.pokedex')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={react} alt='react'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
@@ -91,7 +91,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.coinbase')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={html} alt='html'></img>
                             <img className='w-10 h-10' src={bootstrap} alt='bootstrap'></img>
@@ -114,7 +114,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.githubFinder')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={react} alt='react'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
@@ -137,7 +137,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.calculator')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={react} alt='react'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
@@ -160,7 +160,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.music')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={react} alt='react'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
@@ -183,7 +183,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.portfolio1')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={html} alt='html'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
@@ -206,7 +206,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.portfolio2')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={react} alt='react'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
@@ -229,7 +229,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.portfolio3')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={react} alt='react'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
@@ -252,7 +252,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.puzzle')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={react} alt='react'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
@@ -275,7 +275,7 @@ export default function Projects(){
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.watch')}</h1>
-                        <h6 className='text-gray-500 mt-10'>{t('projects.technologies')}</h6>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
                         <div className='flex justify-between items-center mt-5 w-full'>
                             <img className='w-10 h-10' src={html} alt='html'></img>
                             <img className='w-10 h-10' src={css} alt='css'></img>
