@@ -1,4 +1,4 @@
-import iaImage from '../assets/img/IAPhoto.jpg'
+import iaImage from '../assets/img/IAPhoto.webp'
 import { useTranslation } from "react-i18next";
 
 export default function Home(){

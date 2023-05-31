@@ -11,17 +11,17 @@ import bootstrap from '../assets/img/bootstrap.svg'
 import tailwind from '../assets/img/tailwind.svg'
 import vscode from '../assets/img/vscode.svg'
 import vite from '../assets/img/vite.svg'
-import gympage from '../assets/img/projects/gym.jpg'
-import pokedex from '../assets/img/projects/Pokedex.jpg'
-import coinbase from '../assets/img/projects/Coinbase.jpg'
-import githubFinder from '../assets/img/projects/githubProfileSearch.jpg'
-import calculator from '../assets/img/projects/Calculator.jpg'
-import music from '../assets/img/projects/MusicPlayer.jpg'
-import portfolio1 from '../assets/img/projects/PortfolioV1.jpg'
-import portfolio2 from '../assets/img/projects/PortfolioV2.jpg'
-import portfolio3 from '../assets/img/projects/portfolio3.jpg'
-import puzzle from '../assets/img/projects/Puzzle.jpg'
-import watch from '../assets/img/projects/watch.jpg'
+import gympage from '../assets/img/projects/gym.webp'
+import pokedex from '../assets/img/projects/Pokedex.webp'
+import coinbase from '../assets/img/projects/Coinbase.webp'
+import githubFinder from '../assets/img/projects/githubProfileSearch.webp'
+import calculator from '../assets/img/projects/Calculator.webp'
+import music from '../assets/img/projects/MusicPlayer.webp'
+import portfolio1 from '../assets/img/projects/PortfolioV1.webp'
+import portfolio2 from '../assets/img/projects/PortfolioV2.webp'
+import portfolio3 from '../assets/img/projects/portfolio3.webp'
+import puzzle from '../assets/img/projects/Puzzle.webp'
+import watch from '../assets/img/projects/watch.webp'
 
 
 export default function Projects(){
@@ -41,7 +41,7 @@ export default function Projects(){
                 {/* Project Gym Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={gympage} alt='gym'></img>
+                        <img className='rounded-xl h-full w-full ' src={gympage} alt='gym'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.gym')}</h1>
@@ -64,7 +64,7 @@ export default function Projects(){
                 {/* Project Pokedex Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={pokedex} alt='pokedex'></img>
+                        <img className='rounded-xl h-full w-full' src={pokedex} alt='pokedex'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.pokedex')}</h1>
@@ -87,7 +87,7 @@ export default function Projects(){
                 {/* Project Coinbase Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={coinbase} alt='coinbase'></img>
+                        <img className='rounded-xl h-full w-full' src={coinbase} alt='coinbase'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.coinbase')}</h1>
@@ -110,7 +110,7 @@ export default function Projects(){
                 {/* Project GithubFinder Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={githubFinder} alt='githubFinder'></img>
+                        <img className='rounded-xl h-full w-full' src={githubFinder} alt='githubFinder'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.githubFinder')}</h1>
@@ -133,7 +133,7 @@ export default function Projects(){
                 {/* Project Calculator Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={calculator} alt='calculator'></img>
+                        <img className='rounded-xl h-full w-full' src={calculator} alt='calculator'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.calculator')}</h1>
@@ -156,7 +156,7 @@ export default function Projects(){
                 {/* Project MusicPlayer Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={music} alt='music'></img>
+                        <img className='rounded-xl h-full w-full' src={music} alt='music'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.music')}</h1>
@@ -179,7 +179,7 @@ export default function Projects(){
                 {/* Project Portfolio V1 Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={portfolio1} alt='portfolio1'></img>
+                        <img className='rounded-xl h-full w-full' src={portfolio1} alt='portfolio1'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.portfolio1')}</h1>
@@ -202,7 +202,7 @@ export default function Projects(){
                 {/* Project Portfolio V2 Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={portfolio2} alt='portfolio2'></img>
+                        <img className='rounded-xl h-full w-full' src={portfolio2} alt='portfolio2'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.portfolio2')}</h1>
@@ -225,7 +225,7 @@ export default function Projects(){
                 {/* Project Portfolio V3 Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={portfolio3} alt='portfolio3'></img>
+                        <img className='rounded-xl h-full w-full' src={portfolio3} alt='portfolio3'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.portfolio3')}</h1>
@@ -248,7 +248,7 @@ export default function Projects(){
                 {/* Project Puzzle Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={puzzle} alt='puzzle'></img>
+                        <img className='rounded-xl h-full w-full' src={puzzle} alt='puzzle'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.puzzle')}</h1>
@@ -271,7 +271,7 @@ export default function Projects(){
                 {/* Project Watch Card */}
                 <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
                     <div className='w-full h-[150px] mt-0'>
-                        <img className='rounded-xl h-full' src={watch} alt='watch'></img>
+                        <img className='rounded-xl h-full w-full' src={watch} alt='watch'></img>
                     </div>
                     <div className='flex flex-col text-left p-3 justify-center items-center'>
                         <h1 className='font-bold'>{t('cardproject.watch')}</h1>
