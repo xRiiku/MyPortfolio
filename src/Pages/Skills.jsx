@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+import { useState, useEffect, useRef } from "react";
 import html from '../assets/img/html.svg'
 import css from '../assets/img/css.svg'
 import javascript from '../assets/img/javascript.svg'
@@ -9,23 +11,39 @@ import vscode from '../assets/img/vscode.svg'
 import vite from '../assets/img/vite.svg'
 import git from '../assets/img/git.svg'
 import github from '../assets/img/github.svg'
-import { useTranslation } from "react-i18next";
 
 
 export default function Skills(){
+
+    const [isScrolled, setIsScrolled] = useState(false);
+    const skillsRef = useRef(null);
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            const skillsSectionTop = skillsRef.current.offsetTop;
+
+            setIsScrolled(scrollTop > skillsSectionTop - 550);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const {t} = useTranslation()
 
     
     return (
-        <section id="skills" className="text-xl w-screen items-center flex pt-52 z-20 px-10">
+        <section ref={skillsRef} id="skills" className="text-xl w-screen items-center flex pt-52 z-20 px-10">
         <div className="flex flex-col justify-between mt-10 max-w-[1280px] w-screen mx-auto items-center maxsm:flex-col maxsm:gap-10">
             <div className="flex flex-col font-medium gap-2 justify-center items-center">
                 <span className="text-2xl text-center">{t('skills.title')}</span>
                 <span className="text-gray-500 text-center"> {t('skills.description')}</span>
             </div>
 
-            <div className='flex flex-wrap justify-between items-center mx-auto w-full mt-10 gap-10 maxxxs:justify-center'>
+            <div className={`flex flex-wrap justify-between items-center mx-auto w-full mt-10 gap-10 maxxxs:justify-center 
+            ${isScrolled ? 'animated-leftSlide' : ''}`}>
                 <img className='w-20 h-20' src={html} alt='html'></img>
                 <img className='w-20 h-20' src={css} alt='css'></img>
                 <img className='w-20 h-20' src={javascript} alt='javascript'></img>

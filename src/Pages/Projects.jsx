@@ -1,5 +1,6 @@
 
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect, useRef } from 'react';
 import link from '../assets/img/link.svg'
 import github from '../assets/img/github.svg'
 import html from '../assets/img/html.svg'
@@ -26,11 +27,27 @@ import watch from '../assets/img/projects/watch.webp'
 
 export default function Projects(){
 
+    const [isScrolled, setIsScrolled] = useState(false);
+    const projectsRef = useRef(null);
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            const projectsSectionTop = projectsRef.current.offsetTop;
+
+            setIsScrolled(scrollTop > projectsSectionTop - 550);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const {t} = useTranslation()
 
     
     return (
-        <section id='projects' className='text-xl w-screen items-center flex pt-52 z-20 px-10'>
+        <section ref={projectsRef} id='projects' className='text-xl w-screen items-center flex pt-52 z-20 px-10'>
         <div className='flex flex-col justify-between mt-10 max-w-[1280px] w-screen mx-auto items-center maxsm:flex-col maxsm:gap-10'>
             <div className='flex flex-col font-medium gap-2 justify-center items-center'>
                 <span className='text-2xl text-center'>{t('projects.mainTitle')}</span>
@@ -39,7 +56,8 @@ export default function Projects(){
 
             <div className='flex flex-wrap justify-between items-center mx-auto w-full mt-10 gap-10 maxsm:justify-center'>
                 {/* Project Gym Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full ' src={gympage} alt='gym'></img>
                     </div>
@@ -62,7 +80,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project Pokedex Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-leftSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={pokedex} alt='pokedex'></img>
                     </div>
@@ -85,7 +104,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project Coinbase Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={coinbase} alt='coinbase'></img>
                     </div>
@@ -108,7 +128,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project GithubFinder Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-leftSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={githubFinder} alt='githubFinder'></img>
                     </div>
@@ -131,7 +152,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project Calculator Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={calculator} alt='calculator'></img>
                     </div>
@@ -154,7 +176,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project MusicPlayer Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-leftSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={music} alt='music'></img>
                     </div>
@@ -177,7 +200,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project Portfolio V1 Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={portfolio1} alt='portfolio1'></img>
                     </div>
@@ -200,7 +224,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project Portfolio V2 Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-leftSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={portfolio2} alt='portfolio2'></img>
                     </div>
@@ -223,7 +248,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project Portfolio V3 Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={portfolio3} alt='portfolio3'></img>
                     </div>
@@ -246,7 +272,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project Puzzle Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-leftSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={puzzle} alt='puzzle'></img>
                     </div>
@@ -269,7 +296,8 @@ export default function Projects(){
                 </article>
 
                 {/* Project Watch Card */}
-                <article className='flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full'>
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
                     <div className='w-full h-[150px] mt-0'>
                         <img className='rounded-xl h-full w-full' src={watch} alt='watch'></img>
                     </div>
