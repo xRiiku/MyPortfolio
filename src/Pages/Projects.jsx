@@ -14,6 +14,7 @@ import vscode from '../assets/img/vscode.svg'
 import vite from '../assets/img/vite.svg'
 import gympage from '../assets/img/projects/gym.webp'
 import pokedex from '../assets/img/projects/Pokedex.webp'
+import todolist from '../assets/img/projects/todolist.webp'
 import coinbase from '../assets/img/projects/Coinbase.webp'
 import githubFinder from '../assets/img/projects/githubProfileSearch.webp'
 import calculator from '../assets/img/projects/Calculator.webp'
@@ -99,6 +100,30 @@ export default function Projects(){
                             <a className='text-sm hover:opacity-70' href='https://www.rikudev.com/Pokedex/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/pokedex' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
+                        </div>
+                    </div>
+                </article>
+
+                {/* Project ToDoList Card */}
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
+                    <div className='w-full h-[150px] mt-0'>
+                        <img className='rounded-xl h-full w-full' src={todolist} alt='todolist'></img>
+                    </div>
+                    <div className='flex flex-col text-left p-3 justify-center items-center'>
+                        <h1 className='font-bold'>{t('cardproject.todolist')}</h1>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
+                        <div className='flex justify-between items-center mt-5 w-full'>
+                            <img className='w-10 h-10' src={react} alt='react'></img>
+                            <img className='w-10 h-10' src={css} alt='css'></img>
+                            <img className='w-10 h-10' src={javascript} alt='javascript'></img>
+                            <img className='w-10 h-10' src={vscode} alt='vscode'></img>
+                        </div>
+                        <div className='flex justify-between items-center mt-10 gap-1'>
+                            <img className='w-5 h-5' src={link} alt='link'></img>
+                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/ToDoList/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
+                            <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/ToDo-List' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
                     </div>
                 </article>
