@@ -28,7 +28,7 @@ export default function Projects(){
             </div>
 
             <div className='relative border border-zinc-600 rounded-xl w-[400px] maxls:w-[300px] maxxs:w-[200px]'>
-            <form action="mailto:drc89.sxm@gmail.com" method="post" className="flex flex-col gap-5 p-10">
+            <form action="mailto:danielRC@rikudev.com" method="post" className="flex flex-col gap-5 p-10">
                 <label htmlFor='name' className="absolute top-9 left-16 px-1 -translate-y-3 text-zinc-600">{t('contact.nameLabel')}</label>
                 <input className=" w-full h-14 border border-zinc-600 rounded-md text-center" type="text" name="name" required/>
                 

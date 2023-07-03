@@ -14,6 +14,8 @@ import vscode from '../assets/img/vscode.svg'
 import vite from '../assets/img/vite.svg'
 import gympage from '../assets/img/projects/gym.webp'
 import pokedex from '../assets/img/projects/Pokedex.webp'
+import weather from '../assets/img/projects/weather.webp'
+import tictactoe from '../assets/img/projects/tictactoe.webp'
 import todolist from '../assets/img/projects/todolist.webp'
 import coinbase from '../assets/img/projects/Coinbase.webp'
 import githubFinder from '../assets/img/projects/githubProfileSearch.webp'
@@ -73,7 +75,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/GymPage/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://gym.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/GymPage' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -97,9 +99,57 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://www.rikudev.com/Pokedex/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://pokedex.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/pokedex' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
+                        </div>
+                    </div>
+                </article>
+
+                {/* Project Weather Card */}
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
+                    <div className='w-full h-[150px] mt-0'>
+                        <img className='rounded-xl h-full w-full ' src={weather} alt='weather'></img>
+                    </div>
+                    <div className='flex flex-col text-left p-3 justify-center items-center'>
+                        <h1 className='font-bold'>{t('cardproject.weather')}</h1>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
+                        <div className='flex justify-between items-center mt-5 w-full'>
+                            <img className='w-10 h-10' src={react} alt='react'></img>
+                            <img className='w-10 h-10' src={css} alt='css'></img>
+                            <img className='w-10 h-10' src={vscode} alt='vscode'></img>
+                            <img className='w-10 h-10' src={vite} alt='vite'></img>
+                        </div>
+                        <div className='flex justify-between items-center mt-10 gap-1'>
+                            <img className='w-5 h-5' src={link} alt='link'></img>
+                            <a className='text-sm hover:opacity-70' href='https://weather.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
+                            <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/WeatherApp' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
+                        </div>
+                    </div>
+                </article>
+
+                {/* Project TicTacToe Card */}
+                <article className={`flex flex-col items-center w-[250px] h-[425px] mb-10 rounded-xl border border-zinc-600 maxxs:w-full 
+                ${isScrolled ? 'animated-rightSlide' : ''}`}>
+                    <div className='w-full h-[150px] mt-0'>
+                        <img className='rounded-xl h-full w-full ' src={tictactoe} alt='tictactoe'></img>
+                    </div>
+                    <div className='flex flex-col text-left p-3 justify-center items-center'>
+                        <h1 className='font-bold'>{t('cardproject.tictactoe')}</h1>
+                        <span className='text-gray-500 mt-10'>{t('projects.technologies')}</span>
+                        <div className='flex justify-between items-center mt-5 w-full'>
+                            <img className='w-10 h-10' src={react} alt='react'></img>
+                            <img className='w-10 h-10' src={css} alt='css'></img>
+                            <img className='w-10 h-10' src={vscode} alt='vscode'></img>
+                            <img className='w-10 h-10' src={vite} alt='vite'></img>
+                        </div>
+                        <div className='flex justify-between items-center mt-10 gap-1'>
+                            <img className='w-5 h-5' src={link} alt='link'></img>
+                            <a className='text-sm hover:opacity-70' href='https://tictactoe.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
+                            <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/TicTacToe' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
                     </div>
                 </article>
@@ -121,7 +171,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/ToDoList/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://todolist.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/ToDo-List' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -145,7 +195,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://www.rikudev.com/Coinbase/html/proyecto.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://coinbase.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/CoinBase' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -169,7 +219,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/githubProfileFinder/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://githubfinder.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/GithubProfileFinder' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -193,7 +243,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/Calculator/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://calculator.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/Calculator' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -217,7 +267,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/MusicPlayer/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://musicplayer.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/MusicPlayer' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -241,7 +291,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/PortfolioV1/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://portfolio1.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/PortfolioV1' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -265,7 +315,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/PortfolioV2/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://portfolio2.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/PortfolioV2' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -289,7 +339,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/Portfolio3/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://portfolio3.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/Portfolio3' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -313,7 +363,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/Puzzle/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://puzzle.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/Puzzle' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
@@ -337,7 +387,7 @@ export default function Projects(){
                         </div>
                         <div className='flex justify-between items-center mt-10 gap-1'>
                             <img className='w-5 h-5' src={link} alt='link'></img>
-                            <a className='text-sm hover:opacity-70' href='https://rikudev.com/Watch/index.html' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
+                            <a className='text-sm hover:opacity-70' href='https://watch.rikudev.com/' target='_blank' rel='noopener noreferrer'>{t('cardproject.preview')}</a>
                             <img className='w-5 h-5 ml-3' src={github} alt='github'></img>
                             <a className='text-sm hover:opacity-70' href='https://github.com/xRiiku/Watch' target='_blank' rel='noopener noreferrer'> {t('cardproject.code')}</a>
                         </div>
