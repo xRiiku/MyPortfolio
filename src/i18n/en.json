@@ -1,9 +1,8 @@
 {
     
 
-    "home.hi": "Hi,👋",
-    "home.nameis": "My name is",
-    "home.junior": "FrontEnd Junior Developer",
+    "home.hi": "Hi👋, my name is",
+    "home.developer": "FrontEnd Developer",
 
     "skills.title": "My Skills",
     "skills.description": "Technologies I´ve been working with recently",
