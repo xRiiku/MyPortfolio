@@ -9,11 +9,13 @@ export default function About(){
         <section id="about" className="text-xl w-screen items-center flex pt-52 z-20 px-10">
         <div className="flex flex-col justify-between mt-10 max-w-[1280px] w-screen mx-auto items-center maxsm:flex-col maxsm:gap-10">
             <div className="flex flex-col font-medium gap-2 justify-center items-center">
-                <span className="text-5xl text-[#dc72b5] text-center">{t('about.title')}</span>
+                <span className="text-5xl text-[#dc72b5] text-center italic">{t('about.title')}</span>
             </div>
 
-            <div className='flex flex-wrap justify-between items-center mx-auto w-full mt-10 gap-10'>
-                <span className="maxls:text-center">{t('about.description')}</span>
+            <div className='flex flex-wrap justify-center items-center mx-auto w-full mt-10 gap-10'>
+                <p className="max-w-[75ch] maxls:text-center">{t('about.description1')}</p>
+                <p className="max-w-[75ch] maxls:text-center">{t('about.description2')}</p>
+                <p className="max-w-[75ch] maxls:text-center">{t('about.description3')}</p>
             </div>
 
             <div className="flex pt-10 flex-wrap justify-center items-center gap-24">
