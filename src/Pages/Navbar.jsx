@@ -59,11 +59,6 @@ export default function Navbar() {
 
 
         <div className="flex justify-between items-center max-w-[1280px] w-screen mx-auto flex-wrap minlg:flex-nowrap">
-            <a href="/">
-            <span className="font-medium bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600 text-transparent bg-clip-text">
-                RikuDev
-            </span>
-            </a>
 
             <button
             className="flex justify-end minlg:hidden ring-1 ring-current rounded"
