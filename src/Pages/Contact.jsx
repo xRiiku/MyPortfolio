@@ -12,7 +12,7 @@ export default function Projects(){
         <section id='contact' className='text-xl w-screen items-center flex pt-52 z-20 px-10'>
         <div className='flex flex-col justify-between mt-10 max-w-[1280px] w-screen mx-auto items-center maxsm:flex-col maxsm:gap-10'>
             <div className='flex flex-col font-medium gap-2 justify-center items-center'>
-                <span className='text-2xl text-center'>{t('contact.mainTitle')}</span>
+                <span className='text-5xl text-[#dc72b5] text-center'>{t('contact.mainTitle')}</span>
             </div>
 
             <div className='flex flex-wrap justify-between items-center mx-auto w-full mt-10 gap-10 maxlg:justify-center'>
@@ -37,7 +37,7 @@ export default function Projects(){
                 <label htmlFor='message' className="absolute top-[229px] left-16 px-1 -translate-y-3 text-zinc-600">{t('contact.messageLabel')}</label>
                 <textarea className="w-full h-32 border border-zinc-600 rounded-md mt-5 text-center" name="message" required/>
 
-                <button className='w-full h-14 border border-zinc-600 bg-[#3E75C3] text-white rounded-md text-center mt-5 uppercase' type="submit">Send</button>
+                <button className='w-full h-14 border border-zinc-600 bg-[#dc72b5] text-white rounded-md text-center mt-5 uppercase' type="submit">Send</button>
             </form>
         </div>
 
