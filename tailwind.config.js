@@ -18,6 +18,8 @@ export default {
 
       'minsm': {'min': '640px'},
       // => @media (min-width: 640px) { ... }
+      'minxs': {'min': '465px'},
+      // => @media (min-width: 465px) { ... }
 
       'max2xl': {'max': '1536px'},
       // => @media (max-width: 1536px) { ... }

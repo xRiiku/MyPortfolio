@@ -1,24 +1,31 @@
 import iaImage from '../assets/img/IAPhoto.webp'
 import { useTranslation } from "react-i18next";
+import pdf from "../assets/utilities/Daniel-RamonCV.pdf"
 
-export default function Home(){
-
+function Home() {
     const {t} = useTranslation()
-    return (
-        <main id="home" className="text-xl w-screen items-center flex pt-52 z-20 px-10">
-        <div className="flex mt-10 justify-between items-center max-w-[1280px] w-screen mx-auto maxmd:flex-col maxmd:gap-10">
-            <div className="text-4xl flex flex-col font-medium gap-2">
-                <p className='text-xl opacity-80'>{t('home.hi')}</p>                
-                <p className="text-8xl bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600 text-transparent bg-clip-text">Daniel RC</p>
-                <p>{t('home.developer')}</p>
-            </div>
+  return (
+<main id="home" className="text-xl w-screen flex justify-center items-center pt-44 z-20">
+  <div className="flex justify-center items-center gap-20 maxlg:flex-col">
+    <div className="flex flex-wrap maxlg:order-2">
+      <div className="w-full flex flex-wrap flex-col maxlg:justify-center maxlg:items-center">
+        <p className="myName text-7xl mx-6 text-left maxlg:text-center font-medium text-transparent bg-clip-text">Daniel Ramon</p>
+        <p className="text-5xl mx-6 text-left maxlg:text-center mb-2 mt-3 font-medium">{t('home.developer')}</p>
 
-            <div className='border-4 bg-gradient-to-b from-sky-500 via-purple-500 to-pink-600 bg-clip-border border-transparent rounded-full'>
-                <img className='w-52 h-52 rounded-full' src={iaImage} alt='iaPhoto'></img>
-            </div>
-
-            
+        <p className="mb-4 mx-6 max-w-[50ch] mt-8">{t('about.description1')}</p>
+        
+        <div className='flex gap-8 mt-6 mx-6 items-center text-center'>
+          <a className='bg-blue-500 text-white w-36 h-12 text-lg text-center font-medium decoration-0 p-2 rounded-3xl hover:opacity-90' target="_blank" rel='noreferrer' href={pdf}>{t("about.CV")}</a>
+          <a className='bg-blue-500 text-white w-36 h-12 text-lg text-center font-medium decoration-0 p-2 rounded-3xl hover:opacity-90' target="_blank" rel='noreferrer' href="mailto:drc89.sxm@gmail.com">{t("about.contactMe")}</a>
         </div>
-        </main>
-    );
+        </div>
+      </div>
+
+        <img className='w-72 rounded-full h-72 object-cover object-center maxlg:order-1' src={iaImage} alt='iaPhoto'></img>
+
+    </div>
+</main>
+  )
 }
+
+export default Home

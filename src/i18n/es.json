@@ -1,15 +1,19 @@
 {
-    "home.hi": "Hola👋, mi nombre es",
-    "home.developer": "Desarrollador FrontEnd",
+    "home.developer": "Estudiante FullStack",
 
-    "skills.title": "Mis Habilidades",
+    "nav.home": "Inicio",
+    "nav.skills": "Habilidades",
+    "nav.projects": "Proyectos",
+    "nav.contact": "Contacto",
+
+    "skills.title": "Habilidades",
 
     "about.title": "Sobre Mi",
-    "about.description1": " Soy estudiante autodidacta de programación web y desarrollo de software. Me especializo en tecnologías de frontend. Actualmente, estoy enfocado en mi proceso de aprendizaje constante y buscando mi primera oportunidad profesional que me ponga a prueba y me permita seguir creciendo dentro del mundo del desarrollo.",
-    "about.description2": " Me gustaría tener la oportunidad de colaborar en proyectos desafiantes y ampliar mis horizontes. Estoy comprometido con el aprendizaje continuo con el objetivo de llegar a ser FullStack Developer.",
-    "about.description3": " Creo que el trabajo en equipo es fundamental para alcanzar resultados sobresalientes y obtener diferentes puntos de vista en los que todas las partes obtengan un aprendizaje de cada uno de los proyectos realizados.",
+    "about.description1": " Después de un año de estudio autodidacta de programación web y desarrollo de software, estoy realizando el FP superior de DAW. Me especializo en tecnologías de frontend. Actualmente, estoy enfocado en mi proceso de aprendizaje constante para llegar a ser FullStack Developer.",
+    "about.CV": "Descargar CV",
+    "about.contactMe": "Contáctame",
 
-    "projects.mainTitle": "Mis proyectos",
+    "projects.mainTitle": "Proyectos",
     "projects.technologies": "Tecnologías",
     "cardproject.preview": "Vista previa",
     "cardproject.code": "Ver código",
@@ -19,18 +23,15 @@
     "cardproject.weather": "App del Tiempo",
     "cardproject.tictactoe": "3 en raya",
     "cardproject.coinbase": "Clon de Coinbase",
-    "cardproject.githubFinder": "Buscador de Perfiles",
-    "cardproject.calculator": "Calculadora",
-    "cardproject.music": "Reproductor de Música",
-    "cardproject.portfolio1": "Portafolio V1",
-    "cardproject.portfolio2": "Portafolio V2",
-    "cardproject.portfolio3": "Portafolio V3",
-    "cardproject.puzzle": "Juego Puzzle",
-    "cardproject.watch": "Reloj Digital",
+    "cardproject.githubFinder": "Buscador de Perfiles Github",
+    "cardproject.tesla": "Clon de Tesla",
+    "cardproject.mernauth": "MERN Auth App",
+    "cardproject.minesweeper": "Buscaminas",
 
     "contact.mainTitle": "Contacto",
     "contact.getInTouch": "Ya sea que tengas una pregunta, quieras comenzar un proyecto o simplemente quieras conectarte, no dudes en enviarme un mensaje a través del formulario de contacto o en las redes sociales.",
     "contact.nameLabel": "Nombre",
     "contact.mailLabel": "Correo",
-    "contact.messageLabel": "Mensaje"
+    "contact.messageLabel": "Mensaje",
+    "contact.send": "ENVIAR"
 }

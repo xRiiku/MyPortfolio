@@ -1,17 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.light, .light label {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
-  .dark, .dark label, .dark input, .dark textarea {
-    background-color: #000000;
-    color: #ffffff;
-  }
-
-* {
-  box-sizing: border-box;
-}

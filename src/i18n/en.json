@@ -1,17 +1,19 @@
 {
-    
+    "home.developer": "FullStack Student",
 
-    "home.hi": "Hi👋, my name is",
-    "home.developer": "FrontEnd Developer",
+    "nav.home": "Home",
+    "nav.skills": "Skills",
+    "nav.projects": "Projects",
+    "nav.contact": "Contact",
 
-    "skills.title": "My Skills",
+    "skills.title": "Skills",
 
     "about.title": "About Me",
-    "about.description1": " Self-taught student in web programming and software development. Specialized in frontend technologies and currently focused on my ongoing learning process and seeking my first professional opportunity that challenges me and allows me to continue growing in the world of development.",
-    "about.description2": " I would like to have the opportunity to collaborate on challenging projects and broaden my horizons. Committed to continuous learning with the goal of becoming a FullStack Developer.", 
-    "about.description3": " I believe that teamwork is essential to achieve outstanding results and gain different perspectives where all parties can learn from each project", 
-
-    "projects.mainTitle": "My Projects",
+    "about.description1": "After a year of self-taught study of web programming and software development, I'm doing a higher FP in DAW. Specialized in frontend technologies. Currently, I am focused on my constant learning process to become a FullStack Developer.",
+    "about.CV": "Download CV",
+    "about.contactMe": "Contact me",
+    
+    "projects.mainTitle": "Projects",
     "projects.technologies": "Technologies",
     "cardproject.preview": "Live preview",
     "cardproject.code": "View code",
@@ -21,18 +23,15 @@
     "cardproject.weather": "Weather App",
     "cardproject.tictactoe": "Tic Tac Toe",
     "cardproject.coinbase": "Coinbase Clone",
-    "cardproject.githubFinder": "Profile Finder",
-    "cardproject.calculator": "Calculator",
-    "cardproject.music": "Music Player",
-    "cardproject.portfolio1": "Portfolio V1",
-    "cardproject.portfolio2": "Portfolio V2",
-    "cardproject.portfolio3": "Portfolio V3",
-    "cardproject.puzzle": "Puzzle Game",
-    "cardproject.watch": "Digital Watch",
+    "cardproject.githubFinder": "Github Profile Finder",
+    "cardproject.tesla": "Tesla Clone",
+    "cardproject.mernauth": "MERN Auth App",
+    "cardproject.minesweeper": "Minesweeper",
 
     "contact.mainTitle": "Contact",
     "contact.getInTouch": "Whether you have a question, want to start a project or simply want to connect. Feel free to send me a message in the contact form or social media",
     "contact.nameLabel": "Name",
     "contact.mailLabel": "Mail",
-    "contact.messageLabel": "Message"
+    "contact.messageLabel": "Message",
+    "contact.send": "SEND"
 }
