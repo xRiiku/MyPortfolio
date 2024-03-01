@@ -36,8 +36,14 @@ export default {
       'maxsm': {'max': '640px'},
       // => @media (max-width: 640px) { ... }
 
+      'max501': {'max': '501px'},
+      // => @media (max-width: 501px) { ... }
+
       'maxls': {'max': '465px'},
       // => @media (max-width: 465px) { ... }'max': }
+
+      'max400': {'max': '400px'},
+      // => @media (max-width: 400px) { ... }
 
       'maxxs': {'max': '368px'},
       // => @media (max-width: 368px) { ... }
