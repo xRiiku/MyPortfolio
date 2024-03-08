@@ -358,7 +358,7 @@ input:not(:checked) + .slider svg:nth-child(2) {
   right: 12px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .menu {
     display: block;
   }

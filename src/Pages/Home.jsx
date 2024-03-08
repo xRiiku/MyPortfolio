@@ -5,8 +5,8 @@ import pdf from "../assets/utilities/Daniel-RamonCV.pdf"
 function Home() {
     const {t} = useTranslation()
   return (
-<main id="home" className="text-xl w-screen flex justify-center items-center pt-44 z-20">
-  <div className="flex justify-center items-center gap-20 maxlg:flex-col">
+<main id="home" className="text-xl w-screen flex justify-center items-center pt-44 maxmd:pt-10 maxsm:pt-6 z-20">
+  <div className="flex justify-center items-center gap-20 maxmd:gap-6 maxlg:flex-col">
     <div className="flex flex-wrap maxlg:order-2">
       <div className="w-full flex flex-wrap flex-col maxlg:justify-center maxlg:items-center">
         <p className="myName text-7xl mx-6 text-left maxlg:text-center font-medium text-transparent bg-clip-text">Daniel Ramon</p>
