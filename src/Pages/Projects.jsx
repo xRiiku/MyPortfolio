@@ -75,8 +75,8 @@ export default function Projects(){
                             <img className='w-10 h-10' src={firebase} alt='firebase'></img>
                         </div>
                         <div className='flex justify-between items-center mt-6 gap-3 text-white'>
-                        <a className='bg-blue-500 text-white w-24 h-8 text-xs text-center font-medium decoration-0 p-2 rounded-3xl hover:opacity-90' target="_blank" rel='noreferrer' href='https://xriku-mern-auth-app.onrender.com/'>{t('cardproject.preview')}</a>
-                        <a className='bg-blue-500 text-white w-24 h-8 text-xs text-center font-medium decoration-0 p-2 rounded-3xl hover:opacity-90' target="_blank" rel='noreferrer' href='https://github.com/xRiiku/MERN-Auth'>{t('cardproject.code')}</a>
+                        <a className='bg-blue-500 text-white w-24 h-8 text-xs text-center font-medium decoration-0 p-2 rounded-3xl hover:opacity-90' target="_blank" rel='noreferrer' href='https://mernauthapp.rikudev.com'>{t('cardproject.preview')}</a>
+                        <a className='bg-blue-500 text-white w-24 h-8 text-xs text-center font-medium decoration-0 p-2 rounded-3xl hover:opacity-90' target="_blank" rel='noreferrer' href='https://github.com/xRiiku/MERN-Auth-App'>{t('cardproject.code')}</a>
                         </div>
             </div>
             </div>
